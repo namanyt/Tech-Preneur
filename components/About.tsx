@@ -44,7 +44,7 @@ const useStyles = createStyles((theme) => ({
 
 export function About({ id }: { id: string }) {
   const { classes } = useStyles();
-  const [buttonValue, toggle] = useToggle(['red', 'blue']);
+  const [buttonValue, toggle] = useToggle(['blue', 'red']);
 
   return (
     <Container id={id} className={classes.Containter}>
