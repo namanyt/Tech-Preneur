@@ -78,29 +78,31 @@ const useStyles = createStyles((theme) => ({
 interface HeaderMiddleProps {
   links: { link: string; label: string }[];
   height?: string;
+  id: string;
 }
 
-export function HeaderMiddle({ links, height }: HeaderMiddleProps) {
+export function HeaderMiddle({ links, height, id }: HeaderMiddleProps) {
   const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
     <Link
-      key={link.label}
+      // key={link.label}
       href={link.link}
       // className={cx(classes.link, { [classes.linkActive]: active === link.link })}
       onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
+        // event.preventDefault();
+        // setActive(link.link);
       }}
     >
+      {/* {link.label} */}
       <Button variant="subtle" gradient={{ from: 'teal', to: 'blue', deg: 60 }}>{link.label}</Button>
     </Link>
   ));
 
   return (
-    <Header height={height ? height : '30vh'}>
+    <Header id={id} height={height ? height : '30vh'}>
       <Container className={classes.inner}>
         <Burger opened={opened} onClick={toggle} size="md" className={classes.burger} />
         <Group className={classes.links} spacing={15}>

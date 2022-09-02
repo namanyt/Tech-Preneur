@@ -16,17 +16,15 @@ import { FooterSimple as Footer } from '../components/Footer'
 const Home: NextPage = () => {
   return (
     <>
-      <div id='#'></div>
+      {/* <div id='#'></div> */}
       {/* <Header height="7.5vh" links={[{ label: 'Home', link: "#" }, { label: 'About', link: 'https://projectmarket861.wixsite.com/tech-preneur' }, { label:'Buy', link:'/shop'}]} /> */}
-      <Header height="7.5vh" links={[{ label: 'Home', link: "#" }, { label: 'About', link: '#about' }, { label:'Buy', link:'buy'}]} />
+      <Header id='#' height="7.5vh" links={[{ label: 'Home', link: "#" }, { label: 'About', link: '#about' }, { label:'Buy', link:'#buy'}]} />
       <Hero />
 
-      <div id='#about'></div>
-      <About />
+      <About id='about' />
 
-      <hr style={{ transform: 'translateY(-5em)' }} />
-      <div id='#buy'></div>
-      <Product />
+      <hr/>
+      <Product id='buy' />
 
       <Footer links={[{ label: 'Back to Top', link: "#" }]} />
       

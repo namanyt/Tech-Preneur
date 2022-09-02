@@ -34,11 +34,11 @@ const useStyles = createStyles((theme) => ({
 }
 ))
 
-export function About() {
+export function About({ id }: { id: string }) {
   const { classes } = useStyles();
 
   return (
-    <Container className={classes.Containter}>
+    <Container id={id} className={classes.Containter}>
       <Title className={classes.Title}>
         Articles
       </Title>

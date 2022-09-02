@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
   card: {
-    height: 440,
-    width: 300,
+    height: '70vh',
+    width: 'clamp(15vw, 300, 400)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -20,7 +20,7 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 900,
     color: theme.colors.white,
     lineHeight: 1.2,
-    fontSize: 32,
+    fontSize: 'clamp(3.5vw, 2em, 2em)',
     marginTop: theme.spacing.xs,
     opacity: 1,
     textShadow: '0 0 10px rgba(0, 0, 0, 1)',
@@ -31,7 +31,7 @@ const useStyles = createStyles((theme) => ({
     color: theme.colors.gray[1],
     opacity: 1,
     marginTop: theme.spacing.xs,
-    fontSize: 16,
+    fontSize: 'clamp(1.3vw, 1.3vw, 1.5em)',
     fontWeight: 500,
     textShadow: '0 0 20px rgba(0, 0, 0, 2)',
   },

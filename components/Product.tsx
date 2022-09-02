@@ -5,7 +5,7 @@ import { FeaturesCard } from "./ProductCards";
 const useStyles = createStyles((theme) => ({
   Container: {
     height: '95vh',
-
+    marginTop: '10vh',
     [theme.fn.smallerThan("sm")]: {
       justifyContent: "flex-start",
     },
@@ -28,11 +28,11 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function Product() {
+export function Product({id}: any) {
   const { classes } = useStyles();
 
   return (
-    <Container className={classes.Container}>
+    <Container id={id} className={classes.Container}>
       <Title className={classes.Title}>Products</Title>
 
       <Grid>
@@ -41,7 +41,7 @@ export function Product() {
             name='Paddy Waste Carpet'
             subtitle="Made for Living Room, Guest Room, Bedroom and Hall"
             offer=""
-            price="$40.00"
+            price="$5.00"
             image="carpet_1.webp"
             button_text="Buy Now"
             data={[
