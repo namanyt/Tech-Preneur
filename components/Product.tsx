@@ -15,11 +15,12 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
     lineHeight: 1.05,
-    maxWidth: 500,
+    maxWidth: '100%',
     fontSize: 48,
     marginTop: "-50px",
     marginBottom: '3em',
-
+    textAlign: 'center',
+    
     [theme.fn.smallerThan("md")]: {
       maxWidth: "100%",
       fontSize: 34,
@@ -33,7 +34,7 @@ export function Product({id}: any) {
 
   return (
     <Container id={id} className={classes.Container}>
-      <Title className={classes.Title}>Products</Title>
+      <Title className={classes.Title}>Our Products</Title>
 
       <Grid>
         <Grid.Col span={4}>

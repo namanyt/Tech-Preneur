@@ -22,21 +22,20 @@ const Home: NextPage = () => {
       <Hero />
 
       <About id='about' />
-
-      <hr/>
-      <Product id='buy' />
-
-      <Footer links={[{ label: 'Back to Top', link: "#" }]} />
-      
-      {/* NOTE: Use this as fallback in case of emergency */}
       {/* <Container style={{
         margin: 0,
         padding: 0,
         width: '100vw',
         height: '100vh'
       }}>
-        <iframe src="https://projectmarket861.wixsite.com/tech-preneur" width='1325vw' height='100%' />
-      </Container> */}
+        <iframe src="https://projectmarket861.wixsite.com/tech-preneur" width='1270vw' height='100%' />
+      </Container>
+       */}
+      <Product id='buy' />
+
+      <Footer links={[{ label: 'Back to Top', link: "#" }]} />
+      
+      {/* NOTE: Use this as fallback in case of emergency */}
     </>
   )
 }

@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
     marginTop: theme.spacing.xs,
     fontSize: 'clamp(1.3vw, 1.3vw, 1.5em)',
     fontWeight: 500,
-    textShadow: '0 0 20px rgba(0, 0, 0, 2)',
+    textShadow: '0 0 5px rgba(0, 0, 0, 2)',
   },
 
   category: {
