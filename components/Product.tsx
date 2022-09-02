@@ -1,5 +1,5 @@
 import { Container, createStyles, Grid, Title } from "@mantine/core";
-import { IconGasStation, IconLeaf, IconManualGearbox, IconArrowsCross } from "@tabler/icons";
+import { IconGasStation, IconLeaf, IconManualGearbox, IconArrowsCross, IconArrowBarLeft, IconLeafOff } from "@tabler/icons";
 import { FeaturesCard } from "./ProductCards";
 
 const useStyles = createStyles((theme) => ({
@@ -42,12 +42,27 @@ export function Product({id}: any) {
             name='Paddy Waste Carpet'
             subtitle="Made for Living Room, Guest Room, Bedroom and Hall"
             offer=""
-            price="$5.00"
+            price="₹250.00"
             image="carpet_1.webp"
             button_text="Buy Now"
             data={[
               { label: 'Size: 4ft x 4ft', icon: IconArrowsCross },
               { label: '100% Sustainable Product', icon: IconLeaf },
+            ]} />
+        </Grid.Col>
+
+
+        <Grid.Col span={4} ml={300}>
+          <FeaturesCard
+            name='Super Seeder'
+            subtitle="Super Seeder is a combination of Rotary Tiller & Seed Planter with press wheels Excellet for removing stubble."
+            offer="Per Use"
+            price="₹400.00"
+            image="super_seeder.webp"
+            button_text="Buy Now"
+            data={[
+              { label: 'Eco Friendly', icon: IconLeaf },
+              { label: '100% Waste used for the mats', icon: IconLeafOff },
             ]} />
         </Grid.Col>
       </Grid>

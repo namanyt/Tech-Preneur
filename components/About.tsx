@@ -116,8 +116,8 @@ export function About({ id }: { id: string }) {
           Our Alternative
         </Title>
 
-        <img  src="our_alternative.webp" alt="" className={classes.image} style={{position: 'absolute', width: '70vw', zIndex:'-1000'}} />
-        <Text style={{zIndex: '100', textAlign: 'center', fontWeight: 600, fontSize: 20, color: 'white', textShadow: '0 0 10px rgba(0,0,0,1)'}} pt={'3em'} pb={0} pl={'3em'} pr={'3em'}>
+        <img  src="our_alternative.webp" alt="" className={classes.image} style={{position: 'absolute', width: '65vw', zIndex:'-1000'}} />
+        <Text style={{zIndex: '100', textAlign: 'center', fontWeight: 600, fontSize: 20, color: 'white', textShadow: '0 0 5px rgba(0,0,0,1)'}} pt={'3em'} pb={0} pl={'3em'} pr={'3em'}>
         Agriculture residues can have other uses, such as in particle board and biofuel, though these uses can still cause problems like erosion and nutrient loss. Spraying an enzyme, which decomposes the stubble into useful fertiliser, improves the soil, avoids air pollution and prevents carbon dioxide emissions.
         </Text>
       </Container>
