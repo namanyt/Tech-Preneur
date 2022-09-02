@@ -1,5 +1,8 @@
 import { useTheme } from "@emotion/react";
-import { Container, createStyles, Grid, Title, Text } from "@mantine/core";
+import { Container, createStyles, Grid, Title, Text, Button } from "@mantine/core";
+import { useToggle } from "@mantine/hooks";
+import Link from "next/link";
+import { useState } from "react";
 import { ArticleCardImage } from "./Article";
 
 const useStyles = createStyles((theme) => ({
@@ -41,6 +44,7 @@ const useStyles = createStyles((theme) => ({
 
 export function About({ id }: { id: string }) {
   const { classes } = useStyles();
+  const [buttonValue, toggle] = useToggle(['red', 'blue']);
 
   return (
     <Container id={id} className={classes.Containter}>
@@ -112,14 +116,25 @@ export function About({ id }: { id: string }) {
       </Container>
 
       <Container mt={'-10vh'} mb={'-20vh'}>
-        <Title className={classes.Title} style={{marginBottom:'2em'}}>
+        <Title className={classes.Title} style={{ marginBottom: '2em' }}>
           Our Alternative
         </Title>
 
-        <img  src="our_alternative.webp" alt="" className={classes.image} style={{position: 'absolute', width: '65vw', zIndex:'-1000'}} />
-        <Text style={{zIndex: '100', textAlign: 'center', fontWeight: 600, fontSize: 20, color: 'white', textShadow: '0 0 5px rgba(0,0,0,1)'}} pt={'3em'} pb={0} pl={'3em'} pr={'3em'}>
-        Agriculture residues can have other uses, such as in particle board and biofuel, though these uses can still cause problems like erosion and nutrient loss. Spraying an enzyme, which decomposes the stubble into useful fertiliser, improves the soil, avoids air pollution and prevents carbon dioxide emissions.
+        <img src="our_alternative.webp" alt="" className={classes.image} style={{ position: 'absolute', width: '65vw', zIndex: '-1000' }} />
+        <Text style={{ zIndex: '100', textAlign: 'center', fontWeight: 600, fontSize: 20, color: 'white', textShadow: '0 0 5px rgba(0,0,0,1)' }} pt={'3em'} pb={0} pl={'3em'} pr={'3em'}>
+          Agriculture residues can have other uses, such as in particle board and biofuel, though these uses can still cause problems like erosion and nutrient loss. Spraying an enzyme, which decomposes the stubble into useful fertiliser, improves the soil, avoids air pollution and prevents carbon dioxide emissions.
         </Text>
+      </Container>
+
+      <Container mt={'20em'} mb={'5em'} style={{ height: '40vh', textAlign: 'center' }}>
+        <Title className={classes.Title} style={{ fontSize: '30px' }}>Do you want to be the part of this Solution</Title>
+
+        <Link href={'#buy'}>
+          <Button style={{ width: '10em', height: '3em', fontSize: '2em' }} compact color={buttonValue} onClick={() => { toggle(); }}>
+            {buttonValue == 'blue' ? 'Yes' : 'No'}
+          </Button>
+        </Link>
+
       </Container>
 
     </Container>
