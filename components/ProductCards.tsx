@@ -45,9 +45,10 @@ interface FeaturesCardProps {
   button_text: string;
   data: any
   image: string
+  imageWidth?: number | string
 }
 
-export function FeaturesCard({name, subtitle, offer, price, image, button_text, data}: FeaturesCardProps) {
+export function FeaturesCard({name, subtitle, offer, price, image, button_text, data, imageWidth}: FeaturesCardProps) {
   const { classes } = useStyles();
   const features = data.map((feature: any) => (
     <Center key={feature.label}>
@@ -59,7 +60,7 @@ export function FeaturesCard({name, subtitle, offer, price, image, button_text, 
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        <Image src={image} alt={name} />
+        <Image width={imageWidth ? imageWidth : '15em'} src={image} alt={name} />
       </Card.Section>
 
       <Group position="apart" mt="md">
