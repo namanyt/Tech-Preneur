@@ -39,7 +39,6 @@ const Home: NextPage = () => {
             { label: 'Your Orders', link: '' },
             { label: 'Your Account', link: '' },
             { label: 'Customers Service', link: '' },
-            { label: 'You list', link: '' },
             { label: 'Returns', link: '' },
             { label: 'Contact Us', link: 'https://joyful.tk/Contact.php' },
           ]

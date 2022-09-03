@@ -130,8 +130,8 @@ export function About({ id }: { id: string }) {
         <Title className={classes.Title} style={{ fontSize: '30px' }}>Do you want to be the part of this Solution</Title>
 
         <Link href={'#buy'}>
-          <Button style={{ width: '10em', height: '3em', fontSize: '2em' }} compact color={buttonValue} onClick={() => { toggle(); }}>
-            {buttonValue == 'blue' ? 'Yes' : 'No'}
+          <Button style={{ width: '10em', height: '3em', fontSize: '2em' }} compact color={'blue'} onClick={() => { toggle(); }}>
+            Yes
           </Button>
         </Link>
 
