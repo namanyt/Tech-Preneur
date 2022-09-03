@@ -36,12 +36,12 @@ const Home: NextPage = () => {
       <Footer data={[
         {
           title: 'Quick Links', links: [
-            { label: 'Registration Form', link: 'https://www.dpsjaipur.com/Registration-Form' },
-            { label: 'RFID', link: 'https://www.dpsjaipur.com/RFID' },
-            { label: 'RTE Notifications 2022', link: 'https://www.dpsjaipur.com/pdf/RTE_Notification.jpg' },
-            { label: 'Important Circulars', link: 'https://www.dpsjaipur.com/upload/attach/367921598538685_Important_Circulars.pdf' },
-            { label: 'Contact Us', link: 'https://www.dpsjaipur.com/Contact.php' },
-            { label: 'PTA Registration', link: 'https://www.dpsjaipur.com/message.html' },
+            { label: 'Your Orders', link: '' },
+            { label: 'Your Account', link: '' },
+            { label: 'Customers Service', link: '' },
+            { label: 'You list', link: '' },
+            { label: 'Returns', link: '' },
+            { label: 'Contact Us', link: 'https://joyful.tk/Contact.php' },
           ]
         },
         {
@@ -49,8 +49,8 @@ const Home: NextPage = () => {
             'Delhi Public School Jaipur, Ajmer Road Branch NH-8, Jaipur Ajmer Highway, 302026',
             '',
             'Phone : +91-829-056-5656, +91-9680006938',
-            'For Admission Enquiry : +91- 9116405333+91-9828982987',
-            'E-mail : info@dpsjaipur.com, admission@dpsjaipur.com'
+            'For Enquiry : +91- 9116405333+91-9828982987',
+            'E-mail : joyfulmerger@dpsjaipur.com'
           ]
         }
       ]} />

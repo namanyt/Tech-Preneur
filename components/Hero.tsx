@@ -1,4 +1,4 @@
-import { createStyles, Container, Title, Text, Button } from '@mantine/core';
+import { createStyles, Container, Title, Text, Button, Image } from '@mantine/core';
 import { url } from 'inspector';
 import Link from 'next/link';
 
@@ -84,18 +84,19 @@ export function HeroImageRight() {
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Title className={classes.title}>
+            <Image src='logo.png' style={{ position: 'absolute', width: '30em', marginTop: '-12em', marginLeft:'-5em' }} />
+            {/* <Title className={classes.title} mt={'3em'}>
               <Text
                 component="span"
                 inherit
-                variant="gradient"
-                gradient={{ from: 'pink', to: 'yellow' }}
+                // variant="gradient"
+                // gradient={{ from: 'pink', to: 'yellow' }}
               >
                 Joyful Merging
               </Text>{' '}
-            </Title>
+            </Title> */}
 
-            <Text className={classes.description} pt={50} mb={'20vh'}>
+            <Text className={classes.description} pt={50} mt={'4em'} mb={'10vh'}>
               A solution to the problem of stubble farming
             </Text>
 

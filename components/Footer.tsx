@@ -66,7 +66,7 @@
 //   );
 // }
 
-import { createStyles, Text, Container, ActionIcon, Group } from '@mantine/core';
+import { createStyles, Text, Container, ActionIcon, Group, Anchor } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
 import { MantineLogo } from '@mantine/ds';
 
@@ -219,7 +219,7 @@ export function FooterSimple({ data, style }: FooterLinksProps) {
         <div className={classes.logo}>
           <Text className={classes.title}>Tech Preneur</Text>
           <Text size="xs" color="dimmed" className={classes.description}>
-            abcd
+            <Anchor href='https://joyfulmerger.tk' variant='text'>https://joyfulmerger.tk</Anchor>
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>

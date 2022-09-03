@@ -6,7 +6,7 @@ import { Button, Container, createStyles, Title, Text, Grid } from '@mantine/cor
 import Image from 'next/image'
 import Link from 'next/link'
 import { VisitorType } from '../../utils/Shop'
-import { IconArrowsCross, IconHeartHandshake, IconLeaf, IconLeafOff, IconArrowBack } from '@tabler/icons'
+import { IconArrowsCross, IconHeartHandshake, IconLeaf, IconLeafOff, IconArrowBack, IconMan } from '@tabler/icons'
 import { FeaturesCard } from '../../components/ProductCards'
 
 const useStyle = createStyles((theme) => ({
@@ -157,6 +157,10 @@ const Shop: NextPage = () => {
           <Grid style={{ width: 'calc(95vw - 8em)' }} ml={'5em'}>
             {CElements}
           </Grid>
+
+          <Button variant="subtle" ml={'40em'} size="md">
+            Load more
+          </Button> 
         </>
       )}
 
@@ -173,17 +177,18 @@ const Shop: NextPage = () => {
                 name='Super Seeder'
                 subtitle="Super Seeder is a combination of Rotary Tiller & Seed Planter with press wheels Excellet for removing stubble."
                 offer="Per Hectare"
-                price="₹1000.00"
+                price="₹2000.00"
                 image="../super_seeder.jpg"
                 imageWidth={'20em'}
-                button_text="Buy Now"
+                button_text="Hire Now"
                 data={[
                   { label: 'Eco Friendly', icon: IconLeaf },
                   { label: '100% Waste used for the mats', icon: IconLeafOff },
+                  {label:'Helper will be sent', icon: IconMan }
                 ]} />
             </Grid.Col>
             <Grid.Col style={{position:'absolute'}} mt={'4em'} ml={'calc(50em - 1px)'}>
-              <Text size={33} weight={500} style={{opacity:.6}}>How to Use</Text>
+              <Text size={33} weight={500} style={{opacity:.6}}>Demo Video</Text>
             </Grid.Col>
             <Grid.Col style={{position: 'absolute'}} ml={'40em'} mt={'10em'}>
               <iframe src="https://cdn.ciderboi.xyz/super_seeder_video.mp4" style={{border: 'none', boxShadow: '0 0 10px rgba(0, 0, 0, 1)', position: 'absolute'}} width={'500em'} height='235em' />
